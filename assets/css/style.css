@@ -12,6 +12,13 @@ body {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+/* moved a tag towards the top for organization */
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 /* created selector for header/footer since they use the same font family */
 
 header,
@@ -46,14 +53,7 @@ nav ul li {
     margin-left: 25px;
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-p {
-    font-size: 16px;
-}
+/* removed "p" selector since default font size is 16px */
 
 .hero {
     height: 800px;
@@ -80,50 +80,24 @@ main {
     margin-left: 20px;
 }
 
-.search-engine-optimization {
+/* created a selctor for "section" instead of having 3 separate selectors do the same thing */
+
+section {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
     background-color: #0072bb;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    background-color: #0072bb;
-}
+/* added "section img" selector instead of having individual selectors for all 3 sections */
 
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    background-color: #0072bb;
-}
-
-.search-engine-optimization img {
+section img {
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
+/* added "section h2" selector instead of having 3 selectors for each individual h2 section */
 
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
+section h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
